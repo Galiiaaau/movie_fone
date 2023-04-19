@@ -1,6 +1,7 @@
 package tests;
 
 import components.MovieFoneSearchComponent;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +13,7 @@ public class MovieFone extends TestBase {
 
     @Test
     @Tag("remote")
-
+    @DisplayName("Check specific movie's content")
     void MovieSearch() {
 
         step("Open movie website", () -> {
